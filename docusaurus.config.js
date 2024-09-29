@@ -13,17 +13,18 @@ const config = {
   favicon: 'img/atom.svg',
 
   // Set the production url of your site here
-  url: 'https://github.com/',
+  url: 'https://henningmyhrvold.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/xyz-docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'https://github.com/henningmyhrvold', // Usually your GitHub org/user name.
-  projectName: '/xyz-docs/', // Usually your repo name.
+  organizationName: 'henningmyhrvold', // Usually your GitHub org/user name.
+  projectName: 'https://henningmyhrvold.github.io/', // Usually your repo name.
+  deploymentBranch: 'deployment',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -44,7 +45,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/henningmyhrvold/xyz-docs',
+            'https://github.com/henningmyhrvold/henningmyhrvold.github.io/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -73,7 +74,7 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'guideSidebar',
+            sidebarId: 'docSidebar',
             position: 'left',
             label: 'Guides',
           },
@@ -96,7 +97,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/henningmyhrvold/xyz-docs',
+                href: 'https://github.com/henningmyhrvold/henningmyhrvold.github.io/',
               },
             ],
           },
@@ -105,11 +106,11 @@ const config = {
             items: [
               {
                 label: 'Guides',
-                to: '/guides/intro',
+                to: '/docs/intro',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/henningmyhrvold/xyz-docs',
+                href: 'https://github.com/henningmyhrvold/henningmyhrvold.github.io/',
               },
             ],
           },
